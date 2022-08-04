@@ -1,0 +1,26 @@
+pluginManagement {
+
+    plugins {
+        id 'com.google.devtools.ksp' version "1.7.10-1.0.6" apply false
+        id 'com.android.library' version '7.2.1'
+        id 'org.jetbrains.kotlin.android' version '1.7.10'
+    }
+
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "KspMemory"
+include ':app'
+include ':mylibrary'
+include ':mylibrary1'
+include ':mylibrary2'
