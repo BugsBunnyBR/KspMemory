@@ -15,7 +15,7 @@ As you can see from this run replacing ksp with kapt makes the kotlin daemon mem
 
 ## How to run the benchmark
 
-- Install gradle profiler
+- Install gradle profiler, I recommend using SDKMAN -> https://sdkman.io/sdks#gradleprofiler
 - run ./run_benchmark.sh
 
 I used https://visualvm.github.io/ to monitor the memory usage of the build
