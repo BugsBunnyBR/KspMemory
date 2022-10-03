@@ -1,6 +1,9 @@
-	gradle-profiler \
-		--benchmark --project-dir "." \
-		--scenario-file changes.scenario \
-		--output-dir "kapt" \
-		--iterations 50 \
-		--warmups 3
+build {
+    title = "Build Project"
+    tasks = "app:assembleDebug"
+    gradle-args = ["--no-build-cache"]
+    daemon = warm
+    apply-abi-change-to = ["mylibrary/src/main/java/com/example/mylibrary/MyTable.kt", "mylibrary2/src/main/java/com/example/mylibrary/MyTable2.kt"]
+    cleanup-tasks = ["clean"]
+}
+
