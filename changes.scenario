@@ -3,5 +3,7 @@ build {
     tasks = "app:assembleDebug"
     gradle-args = ["--no-build-cache"]
     daemon = warm
+    apply-abi-change-to = ["mylibrary/src/main/java/com/example/mylibrary/MyTable.kt", "mylibrary2/src/main/java/com/example/mylibrary/MyTable2.kt"]
     cleanup-tasks = ["clean"]
 }
+
