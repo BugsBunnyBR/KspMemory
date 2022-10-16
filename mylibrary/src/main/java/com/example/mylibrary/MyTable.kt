@@ -12,3 +12,4 @@ data class MyTable(
     @ColumnInfo(name = "value", index = true)
     val value: String
 )
+fun _m_038ac7ef_aba7_4446_9a50_3981c15472ae_build_41b46a7c_WARM_UP_1() {}
